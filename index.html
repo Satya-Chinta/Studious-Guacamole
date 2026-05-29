@@ -1,205 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page not found — Amicorp</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC – Form Not Found</title>
+    <link rel="icon" href="https://amicorpcapitalmanagement.es/wp-content/uploads/2025/09/favicon.jpg" type="image/jpeg">
     <style>
-      :root {
-        --page-bg: #e6ebf0;
-        --navy: #1a2b56;
-        --btn-bg: #f05a5a;
-        --btn-text: #ffffff;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        margin: 0;
-        min-height: 100%;
-        background: var(--page-bg);
-        color: var(--navy);
-        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      .masthead {
-        background: var(--page-bg);
-        border-bottom: 1px solid rgba(26, 43, 86, 0.08);
-      }
-
-      .masthead-inner {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 14px 40px 14px 36px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 28px;
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0;
-      }
-
-      .brand img {
-        display: block;
-        height: 46px;
-        width: auto;
-        max-width: 200px;
-        object-fit: contain;
-        pointer-events: none;
-        user-select: none;
-      }
-
-      .nav {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 0 22px;
-        row-gap: 8px;
-      }
-
-      .nav-item {
-        font-size: 13px;
-        font-weight: 500;
-        letter-spacing: 0.01em;
-        color: var(--navy);
-        white-space: nowrap;
-        user-select: none;
-        pointer-events: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-      }
-
-      .nav-item .chev {
-        display: inline-block;
-        width: 0;
-        height: 0;
-        margin-left: 1px;
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-top: 5px solid var(--navy);
-        opacity: 0.85;
-        transform: translateY(1px);
-      }
-
-      .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        min-height: calc(100vh - 76px);
-        padding: 48px 24px 64px;
-      }
-
-      .main h1 {
-        margin: 0 0 12px;
-        font-size: clamp(42px, 7vw, 72px);
-        font-weight: 700;
-        line-height: 1.05;
-        letter-spacing: -0.02em;
-        color: var(--navy);
-      }
-
-      .main .sub {
-        margin: 0 0 32px;
-        font-size: 15px;
-        font-weight: 400;
-        color: var(--navy);
-        opacity: 0.92;
-      }
-
-      .cta-pill {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 14px 34px;
-        border-radius: 999px;
-        background: var(--btn-bg);
-        color: var(--btn-text);
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-        user-select: none;
-        pointer-events: none;
-      }
-
-      @media (max-width: 1024px) {
-        .masthead-inner {
-          padding: 14px 20px;
-          flex-direction: column;
-          align-items: flex-start;
+        * {
+            box-sizing: border-box;
         }
-
-        .nav {
-          justify-content: flex-start;
-          width: 100%;
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            background: #f5f7fa;
+            color: #1a1a2e;
         }
-      }
-
-      @media (max-width: 640px) {
-        .nav {
-          gap: 0 14px;
+        #embed-container {
+            width: 100%;
         }
-
-        .nav-item {
-          font-size: 12px;
+        #embed-container:not(:empty) {
+            min-height: 100vh;
         }
-
-        .brand img {
-          height: 40px;
+        #embed-container.hidden {
+            display: none;
         }
-      }
+        #default-homepage {
+            display: none;
+            max-width: 640px;
+            margin: 1rem auto 2rem;
+            padding: 2rem;
+            text-align: center;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+        #default-homepage.visible {
+            display: block;
+        }
+        #default-homepage h1 {
+            margin: 0 0 0.75rem;
+            font-size: 1.5rem;
+        }
+        #default-homepage p {
+            margin: 0;
+            color: #555;
+            line-height: 1.5;
+        }
+        #default-homepage .subtext {
+            margin-top: 0.75rem;
+            font-size: 1rem;
+            color: #555;
+        }
+        #error-banner {
+            display: none;
+            margin: 1rem;
+            padding: 1rem;
+            background: #fde8e8;
+            color: #9b1c1c;
+            border-radius: 6px;
+            border: 1px solid #f5c6c6;
+        }
+        #error-banner.visible {
+            display: block;
+        }
     </style>
-  </head>
-  <body>
-    <header class="masthead">
-      <div class="masthead-inner">
-        <div class="brand">
-          <img src="assets/amicorp-logo.png" alt="Amicorp" />
-        </div>
-        <nav class="nav" aria-label="Primary">
-          <span class="nav-item">Company</span>
-          <span class="nav-item">Services</span>
-          <span class="nav-item">Our News</span>
-          <span class="nav-item">Sustainability</span>
-          <span class="nav-item">Locations</span>
-          <span class="nav-item">Our People</span>
-          <span class="nav-item">Careers</span>
-          <span class="nav-item">Contact us</span>
-          <span class="nav-item">Portals<span class="chev" aria-hidden="true"></span></span>
-          <span class="nav-item">English<span class="chev" aria-hidden="true"></span></span>
-        </nav>
-      </div>
-    </header>
+    <script src="https://testportal.amicorp.com/prweb/PRRestService/c11nsvc/v1/pega-embed.js"></script>
+</head>
+<body>
+    <div id="error-banner" role="alert" aria-live="polite"></div>
+    <div id="default-homepage" aria-hidden="true">
+        <h1>No KYC form found.</h1>
+        <p class="subtext">To complete your KYC form, please access the link from the email.</p>
+    </div>
+    <div id="embed-container" class="hidden"></div>
 
-    <main class="main">
-      <h1>Page not found</h1>
-      <p class="sub">Page not found</p>
+    <script>
+        (function () {
+            "use strict";
 
-   <!-- Pega Embed Section Amicorp-->
-  <script src='https://devportal.amicorp.com/prweb/PRRestService/c11nsvc/v1/pega-embed.js' ></script>
-<pega-embed id='theEmbed' action='openPage' pageID='GetStarted' pageClass='AMI-GMS-CLMS-UIPages' casePage='full' assignmentHeader='false' appAlias='clmscs' pegaServerUrl='https://devportal.amicorp.com/prweb/' autoReauth='true' authService='pega' deferLoad='true' clientId='27338244437637967133' style='width:100%'>
-</pega-embed>
-      
-      <span class="cta-pill">Back to Home</span>
-    </main>
-  </body>
+            var DEFAULT_PAGE_TITLE = "KYC – Form Not Found";
+            var PROPER_ASSIGNMENT_KEY_PATTERN = /^ASSIGN-WORKLIST\s+.+\s+(K-\d+)!.+$/i;
+
+            function extractCaseIdFromAssignmentKey(assignmentId) {
+                var match = assignmentId.match(PROPER_ASSIGNMENT_KEY_PATTERN);
+                return match ? match[1] : null;
+            }
+
+            function setDocumentTitleForAssignment(assignmentId) {
+                var caseId = extractCaseIdFromAssignmentKey(assignmentId);
+                if (!caseId) {
+                    log("info", "Assignment key is not properly formed; keeping default tab title.");
+                    return;
+                }
+
+                document.title = "KYC Details " + caseId;
+                log("info", "Document title set:", document.title);
+            }
+
+            var PEGA_CONFIG = {
+                action: "openAssignment",
+                themeID: "SelfServicePortal",
+                casePage: "full",
+                appAlias: "clmscs",
+                pegaServerUrl: "https://testportal.amicorp.com/prweb/",
+                grantType: "customBearer",
+                clientId: "13741032106404931845"
+            };
+
+            function log(level, message, detail) {
+                var prefix = "[AmicorpKYCBridge]";
+                if (detail !== undefined) {
+                    console[level](prefix, message, detail);
+                } else {
+                    console[level](prefix, message);
+                }
+            }
+
+            function showError(message) {
+                var banner = document.getElementById("error-banner");
+                if (!banner) {
+                    log("error", "Error banner element not found:", message);
+                    return;
+                }
+                banner.textContent = message;
+                banner.classList.add("visible");
+            }
+
+            function getAssignmentIdFromUrl() {
+                try {
+                    var params = new URLSearchParams(window.location.search);
+                    var id = params.get("id");
+
+                    if (id === null) {
+                        log("info", "No 'id' query parameter in URL.");
+                        return null;
+                    }
+
+                    id = id.trim();
+                    if (!id) {
+                        log("warn", "'id' query parameter is present but empty.");
+                        return null;
+                    }
+
+                    log("info", "Assignment ID from URL:", id);
+                    return id;
+                } catch (err) {
+                    log("error", "Failed to parse URL query parameters.", err);
+                    throw err;
+                }
+            }
+
+            function showDefaultHomepage() {
+                var homepage = document.getElementById("default-homepage");
+                var embedContainer = document.getElementById("embed-container");
+
+                if (embedContainer) {
+                    embedContainer.innerHTML = "";
+                    embedContainer.classList.add("hidden");
+                }
+                if (homepage) {
+                    homepage.classList.add("visible");
+                    homepage.setAttribute("aria-hidden", "false");
+                }
+                log("info", "Showing default homepage (no assignment ID).");
+                document.title = DEFAULT_PAGE_TITLE;
+            }
+
+            function createPegaEmbed(assignmentId) {
+                var embed = document.createElement("pega-embed");
+                embed.id = "theEmbed";
+                embed.setAttribute("action", PEGA_CONFIG.action);
+                embed.setAttribute("assignmentID", assignmentId);
+                embed.setAttribute("themeID", PEGA_CONFIG.themeID);
+                embed.setAttribute("casePage", PEGA_CONFIG.casePage);
+                embed.setAttribute("appAlias", PEGA_CONFIG.appAlias);
+                embed.setAttribute("pegaServerUrl", PEGA_CONFIG.pegaServerUrl);
+                embed.setAttribute("grantType", PEGA_CONFIG.grantType);
+                embed.setAttribute("clientId", PEGA_CONFIG.clientId);
+                embed.style.width = "100%";
+
+                embed.addEventListener("error", function (event) {
+                    log("error", "pega-embed reported an error.", event);
+                    showError("The assignment could not be loaded. Please check the link or try again later.");
+                });
+
+                return embed;
+            }
+
+            function loadPegaEmbed(assignmentId) {
+                var homepage = document.getElementById("default-homepage");
+                var embedContainer = document.getElementById("embed-container");
+
+                if (!embedContainer) {
+                    throw new Error("Embed container element #embed-container not found.");
+                }
+
+                if (homepage) {
+                    homepage.classList.remove("visible");
+                    homepage.setAttribute("aria-hidden", "true");
+                }
+
+                embedContainer.classList.remove("hidden");
+                setDocumentTitleForAssignment(assignmentId);
+
+                if (typeof customElements !== "undefined" &&
+                    customElements.get("pega-embed") === undefined) {
+                    log("warn", "pega-embed custom element not registered yet; script may still be loading.");
+                }
+
+                var embed = createPegaEmbed(assignmentId);
+                embedContainer.appendChild(embed);
+                log("info", "pega-embed element created and appended.", {
+                    assignmentID: assignmentId,
+                    id: embed.id
+                });
+            }
+
+            function init() {
+                log("info", "DOM loaded; initializing mashup.");
+
+                try {
+                    var assignmentId = getAssignmentIdFromUrl();
+
+                    if (!assignmentId) {
+                        showDefaultHomepage();
+                        return;
+                    }
+
+                    loadPegaEmbed(assignmentId);
+                } catch (err) {
+                    log("error", "Initialization failed.", err);
+                    showError("Something went wrong while starting the page. See the browser console for details.");
+                    showDefaultHomepage();
+                }
+            }
+
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+</body>
 </html>
