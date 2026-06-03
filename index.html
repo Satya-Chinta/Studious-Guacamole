@@ -1,186 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page not found — Amicorp</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYC – Form Not Found</title>
     <link rel="icon" href="https://amicorpcapitalmanagement.es/wp-content/uploads/2025/09/favicon.jpg" type="image/jpeg">
     <style>
-      :root {
-        --page-bg: #e6ebf0;
-        --navy: #1a2b56;
-        --btn-bg: #f05a5a;
-        --btn-text: #ffffff;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      html,
-      body {
-        margin: 0;
-        min-height: 100%;
-        background: var(--page-bg);
-        color: var(--navy);
-        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      .masthead {
-        background: var(--page-bg);
-        border-bottom: 1px solid rgba(26, 43, 86, 0.08);
-      }
-
-      .masthead-inner {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 14px 40px 14px 36px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 28px;
-      }
-
-      .brand {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0;
-      }
-
-      .brand img {
-        display: block;
-        height: 46px;
-        width: auto;
-        max-width: 200px;
-        object-fit: contain;
-        pointer-events: none;
-        user-select: none;
-      }
-
-      .nav {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 0 22px;
-        row-gap: 8px;
-      }
-
-      .nav-item {
-        font-size: 13px;
-        font-weight: 500;
-        letter-spacing: 0.01em;
-        color: var(--navy);
-        white-space: nowrap;
-        user-select: none;
-        pointer-events: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-      }
-
-      .nav-item .chev {
-        display: inline-block;
-        width: 0;
-        height: 0;
-        margin-left: 1px;
-        border-left: 4px solid transparent;
-        border-right: 4px solid transparent;
-        border-top: 5px solid var(--navy);
-        opacity: 0.85;
-        transform: translateY(1px);
-      }
-
-      .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        min-height: calc(100vh - 76px);
-        padding: 48px 24px 64px;
-      }
-
-      .main h1 {
-        margin: 0 0 12px;
-        font-size: clamp(42px, 7vw, 72px);
-        font-weight: 700;
-        line-height: 1.05;
-        letter-spacing: -0.02em;
-        color: var(--navy);
-      }
-
-      .main .sub {
-        margin: 0 0 32px;
-        font-size: 15px;
-        font-weight: 400;
-        color: var(--navy);
-        opacity: 0.92;
-      }
-
-      .cta-pill {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 14px 34px;
-        border-radius: 999px;
-        background: var(--btn-bg);
-        color: var(--btn-text);
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-        user-select: none;
-        pointer-events: none;
-      }
-
-      @media (max-width: 1024px) {
-        .masthead-inner {
-          padding: 14px 20px;
-          flex-direction: column;
-          align-items: flex-start;
         * {
             box-sizing: border-box;
         }
-
-        .nav {
-          justify-content: flex-start;
-          width: 100%;
         body {
             margin: 0;
             font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
             background: #f5f7fa;
             color: #1a1a2e;
         }
-      }
-
-      @media (max-width: 640px) {
-        .nav {
-          gap: 0 14px;
         #embed-container {
             width: 100%;
         }
-
-        .nav-item {
-          font-size: 12px;
         #embed-container:not(:empty) {
             min-height: 100vh;
         }
-
-        .brand img {
-          height: 40px;
         #embed-container.hidden {
             display: none;
         }
@@ -201,16 +41,6 @@
             margin: 0 0 0.75rem;
             font-size: 1.5rem;
         }
-        #default-homepage p {
-            margin: 0;
-            color: #555;
-            line-height: 1.5;
-        }
-        #default-homepage .subtext {
-            margin-top: 0.75rem;
-            font-size: 1rem;
-            color: #555;
-        }
         #error-banner {
             display: none;
             margin: 1rem;
@@ -223,51 +53,131 @@
         #error-banner.visible {
             display: block;
         }
-      }
+        .thank-you-screen {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(0, 64, 107, 0.25);
+            backdrop-filter: blur(2px);
+            overflow-y: auto;
+            padding: 1.5rem;
+        }
+        .thank-you-screen.visible {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .thank-you-container {
+            position: relative;
+            width: 100%;
+            max-width: 520px;
+            margin: auto;
+            padding: 2.25rem 2rem 2rem;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 64, 107, 0.15);
+            border: 1px solid rgba(0, 64, 107, 0.08);
+            overflow: hidden;
+        }
+        .thank-you-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #00406b, #006699);
+        }
+        .thank-you-success-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 1.25rem;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #e8f4fa 0%, #d4ebf7 100%);
+        }
+        .thank-you-success-icon svg {
+            display: block;
+        }
+        .thank-you-heading {
+            margin: 0 0 1rem;
+            font-size: 1.625rem;
+            font-weight: 700;
+            color: #00406b;
+            text-align: center;
+            letter-spacing: -0.02em;
+        }
+        .thank-you-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .thank-you-message {
+            margin: 0 0 1.75rem;
+            color: #4a5568;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+        }
+        .thank-you-highlight {
+            color: #00406b;
+            font-weight: 600;
+        }
+        .thank-you-close-btn {
+            min-width: 140px;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 999px;
+            background: #00406b;
+            color: #fff;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+        .thank-you-close-btn:hover {
+            background: #003357;
+            transform: translateY(-1px);
+        }
+        .thank-you-close-btn:active {
+            transform: translateY(0);
+        }
+        .thank-you-close-btn:focus-visible {
+            outline: 2px solid #00406b;
+            outline-offset: 3px;
+        }
     </style>
-  </head>
-  <body>
-    <header class="masthead">
-      <div class="masthead-inner">
-        <div class="brand">
-          <img src="assets/amicorp-logo.png" alt="Amicorp" />
-        </div>
-        <nav class="nav" aria-label="Primary">
-          <span class="nav-item">Company</span>
-          <span class="nav-item">Services</span>
-          <span class="nav-item">Our News</span>
-          <span class="nav-item">Sustainability</span>
-          <span class="nav-item">Locations</span>
-          <span class="nav-item">Our People</span>
-          <span class="nav-item">Careers</span>
-          <span class="nav-item">Contact us</span>
-          <span class="nav-item">Portals<span class="chev" aria-hidden="true"></span></span>
-          <span class="nav-item">English<span class="chev" aria-hidden="true"></span></span>
-        </nav>
-      </div>
-    </header>
-
-    <main class="main">
-      <h1>Page not found</h1>
-      <p class="sub">Page not found</p>
-
-   <!-- Pega Embed Section Amicorp-->
-  <script src='https://testportal.amicorp.com/prweb/PRRestService/c11nsvc/v1/pega-embed.js' ></script>
-<pega-embed id='theEmbed' action='openPage' pageID='GetStarted' pageClass='AMI-GMS-CLMS-UIPages' casePage='full' assignmentHeader='false' appAlias='clmscs' pegaServerUrl='https://testportal.amicorp.com/prweb/' autoReauth='true' authService='pega' deferLoad='true' clientId='27338244437637967133' style='width:100%'>
-</pega-embed>
-      
-      <span class="cta-pill">Back to Home</span>
-    </main>
-  </body>
     <script src="https://testportal.amicorp.com/prweb/PRRestService/c11nsvc/v1/pega-embed.js"></script>
 </head>
 <body>
     <div id="error-banner" role="alert" aria-live="polite"></div>
     <div id="default-homepage" aria-hidden="true">
-        <h1>No KYC form found.</h1>
-        <p class="subtext">To complete your KYC form, please access the link from the email.</p>
+        <h1>KYC – Form Not Found</h1>
     </div>
     <div id="embed-container" class="hidden"></div>
+    <div id="thank-you-modal" class="thank-you-screen" role="dialog" aria-modal="true" aria-labelledby="thank-you-title" aria-hidden="true">
+        <div class="thank-you-container">
+            <div class="thank-you-success-icon" aria-hidden="true">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 18.5L14.5 25L28 11" stroke="#00406b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h1 id="thank-you-title" class="thank-you-heading">Thank You</h1>
+            <div class="thank-you-body">
+                <p class="thank-you-message">
+                    Thank you for choosing our services. We appreciate the opportunity to serve you.
+                    Please note that the &ldquo;KYC declaration&rdquo; form will be sent to your email ID:
+                    <span id="thank-you-email" class="thank-you-highlight">your registered email address</span>
+                    via DocuSign for digital signature.
+                </p>
+                <button id="thank-you-close-btn" class="thank-you-close-btn" type="button">Close</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         (function () {
@@ -275,6 +185,37 @@
 
             var DEFAULT_PAGE_TITLE = "KYC – Form Not Found";
             var PROPER_ASSIGNMENT_KEY_PATTERN = /^ASSIGN-WORKLIST\s+.+\s+(K-\d+)!.+$/i;
+            var ASSIGNMENT_NOT_FOUND_PATTERN = /assignment not found for the given parameter assignmentid/i;
+            var assignmentNotFoundHandled = false;
+            var submitSuccessHandled = false;
+            var submitPending = false;
+            var submitClickedAt = 0;
+            var lastNonSubmitActionAt = 0;
+            var SUBMIT_TRACKING_WINDOW_MS = 90000;
+            var activeEmbed = null;
+            var lastSubmitResponseText = "";
+            var thankYouEmailPollInterval = null;
+            var pegaErrorObservers = [];
+            var shadowPollInterval = null;
+            var submitDomCheckTimeout = null;
+            var submitSuccessWatcherInterval = null;
+            var lastResolvedResponseAt = 0;
+            var cachedThankYouEmail = "";
+            var NON_SUBMIT_ACTION_TEST_IDS = {
+                ":assignment-action-buttons:save": true,
+                ":assignment-action-buttons:cancel": true
+            };
+            var THANK_YOU_TITLE = "Thank You";
+            var AMICORP_HOME_URL = "https://www.amicorp.com";
+            var DEFAULT_THANK_YOU_EMAIL = "your registered email address";
+            var THANK_YOU_EMAIL_FIELD_LABELS = ["UBO Email", "Email"];
+            var SUBMIT_BUTTON_SELECTOR = '[data-testid=":assignment-action-buttons:submit"], button[name="submit"][data-testid=":assignment-action-buttons:submit"]';
+            var ASSIGNMENT_ACTION_BUTTON_SELECTOR = '[data-testid^=":assignment-action-buttons:"], button[name="submit"], button[name="save"], button[name="cancel"]';
+            var SUBMIT_BUTTON_TEST_ID = ":assignment-action-buttons:submit";
+            var ASSIGNMENT_ACTION_URL_PATTERN = /\/assignments\/[^/]+\/actions\/[^/?]+/i;
+            var CASE_VIEW_URL_PATTERN = /\/cases\/[^/]+\/views\//i;
+            var ASSIGNMENT_RESOLVED_STATUS_PATTERN = /"status"\s*:\s*"Resolved-Completed"/i;
+            var ASSIGNMENT_RESOLUTION_PATTERN = /"transitionType"\s*:\s*"resolution"/i;
 
             function extractCaseIdFromAssignmentKey(assignmentId) {
                 var match = assignmentId.match(PROPER_ASSIGNMENT_KEY_PATTERN);
@@ -311,6 +252,906 @@
                 }
             }
 
+            function isAssignmentActionRequest(url) {
+                return typeof url === "string" &&
+                    (ASSIGNMENT_ACTION_URL_PATTERN.test(url) || CASE_VIEW_URL_PATTERN.test(url));
+            }
+
+            function isSubmitActionButton(element) {
+                if (!element) {
+                    return false;
+                }
+
+                var testId = element.getAttribute("data-testid") || "";
+                if (testId === SUBMIT_BUTTON_TEST_ID) {
+                    return true;
+                }
+
+                return element.getAttribute("name") === "submit" &&
+                    element.matches("button, [role='button']");
+            }
+
+            function isNonSubmitActionButton(element) {
+                if (!element) {
+                    return false;
+                }
+
+                var testId = element.getAttribute("data-testid") || "";
+                if (NON_SUBMIT_ACTION_TEST_IDS[testId]) {
+                    return true;
+                }
+
+                var name = element.getAttribute("name") || "";
+                return name === "save" || name === "cancel";
+            }
+
+            function isInteractiveActionButton(button) {
+                if (!button || button.disabled || button.getAttribute("aria-disabled") === "true") {
+                    return false;
+                }
+
+                if (button.closest("[inert]") || button.hasAttribute("inert")) {
+                    return false;
+                }
+
+                if (button.getAttribute("role") === "none") {
+                    return false;
+                }
+
+                var hiddenParent = button.closest("[aria-hidden='true']");
+                if (hiddenParent && !button.getAttribute("data-testid")) {
+                    return false;
+                }
+
+                return true;
+            }
+
+            function resolveActionButtonFromEvent(target, embed) {
+                if (!target || !embed || !embed.shadowRoot || typeof target.closest !== "function") {
+                    return null;
+                }
+
+                var shadowRoot = embed.shadowRoot;
+                var actionButton = target.closest(ASSIGNMENT_ACTION_BUTTON_SELECTOR);
+
+                if (actionButton && shadowRoot.contains(actionButton) && isInteractiveActionButton(actionButton)) {
+                    return actionButton;
+                }
+
+                if (target.closest('button[name="submit"]')) {
+                    actionButton = shadowRoot.querySelector('[data-testid=":assignment-action-buttons:submit"]');
+                    if (actionButton && isInteractiveActionButton(actionButton)) {
+                        return actionButton;
+                    }
+                }
+
+                return null;
+            }
+
+            function cacheThankYouEmailFromEmbed(embed) {
+                var email = getUboEmailFromEmbed(embed);
+                if (email) {
+                    cachedThankYouEmail = email;
+                }
+            }
+
+            function isCaseResolvedInDom(embed) {
+                if (!embed || !embed.shadowRoot) {
+                    return false;
+                }
+
+                var shadowText = embed.shadowRoot.textContent || "";
+                return ASSIGNMENT_RESOLVED_STATUS_PATTERN.test(shadowText) ||
+                    /Resolved-Completed/i.test(shadowText);
+            }
+
+            function isAssignmentFormVisible(embed) {
+                if (!embed || !embed.shadowRoot) {
+                    return false;
+                }
+
+                return !!embed.shadowRoot.querySelector(SUBMIT_BUTTON_SELECTOR);
+            }
+
+            function hasPegaValidationErrors(embed) {
+                if (!embed || !embed.shadowRoot) {
+                    return false;
+                }
+
+                var shadowRoot = embed.shadowRoot;
+                var errorBanner = shadowRoot.querySelector('[data-testid=":banner:"][role="alert"]');
+                var bannerText = errorBanner ? errorBanner.textContent.trim() : "";
+
+                if (bannerText && !ASSIGNMENT_NOT_FOUND_PATTERN.test(bannerText)) {
+                    return true;
+                }
+
+                if (shadowRoot.querySelector('[aria-invalid="true"]')) {
+                    return true;
+                }
+
+                var fieldErrors = shadowRoot.querySelectorAll('[data-testid$=":info"]');
+                for (var i = 0; i < fieldErrors.length; i += 1) {
+                    var fieldText = fieldErrors[i].textContent.trim();
+                    if (fieldText && /error/i.test(fieldText)) {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+
+            function readNetworkResponseText(response) {
+                if (response && typeof response.responseText === "string") {
+                    return Promise.resolve(response.responseText);
+                }
+
+                if (response && typeof response.clone === "function" && typeof response.text === "function") {
+                    return response.clone().text().catch(function () {
+                        return "";
+                    });
+                }
+
+                return Promise.resolve("");
+            }
+
+            function isResolvedAssignmentResponse(responseText) {
+                if (!responseText) {
+                    return false;
+                }
+
+                return ASSIGNMENT_RESOLVED_STATUS_PATTERN.test(responseText) ||
+                    ASSIGNMENT_RESOLUTION_PATTERN.test(responseText);
+            }
+
+            function redirectToAmicorpHome() {
+                log("info", "Redirecting to Amicorp home page.");
+                window.location.href = AMICORP_HOME_URL;
+            }
+
+            function normalizeSummaryFieldValue(value) {
+                if (value === null || value === undefined) {
+                    return "";
+                }
+
+                var trimmed = String(value)
+                    .replace(/[\u2013\u2014]/g, "")
+                    .replace(/\s+/g, " ")
+                    .trim();
+
+                if (!trimmed || /^no value$/i.test(trimmed)) {
+                    return "";
+                }
+
+                return trimmed;
+            }
+
+            function getSummaryFieldValueByLabel(root, label) {
+                var fieldNames = root.querySelectorAll('[data-testid=":field-value-item:name"]');
+
+                for (var i = 0; i < fieldNames.length; i += 1) {
+                    if (fieldNames[i].textContent.trim() !== label) {
+                        continue;
+                    }
+
+                    var valueNode = fieldNames[i].nextElementSibling;
+                    if (!valueNode || valueNode.getAttribute("data-testid") !== ":field-value-item:value") {
+                        continue;
+                    }
+
+                    var value = normalizeSummaryFieldValue(valueNode.textContent);
+                    if (value) {
+                        return value;
+                    }
+                }
+
+                return "";
+            }
+
+            function getUboEmailFromEmbed(embed) {
+                if (!embed || !embed.shadowRoot) {
+                    return "";
+                }
+
+                var summaryRoot = embed.shadowRoot.querySelector('[data-testid=":case-view:summary-fields"]') || embed.shadowRoot;
+
+                for (var i = 0; i < THANK_YOU_EMAIL_FIELD_LABELS.length; i += 1) {
+                    var email = getSummaryFieldValueByLabel(summaryRoot, THANK_YOU_EMAIL_FIELD_LABELS[i]);
+                    if (email) {
+                        return email;
+                    }
+                }
+
+                return "";
+            }
+
+            function getUboEmailFromResponseText(responseText) {
+                if (!responseText) {
+                    return "";
+                }
+
+                try {
+                    var parsed = JSON.parse(responseText);
+                    var content = parsed &&
+                        parsed.data &&
+                        parsed.data.caseInfo &&
+                        parsed.data.caseInfo.content;
+
+                    if (content) {
+                        var candidates = [
+                            content.UBOEmail,
+                            content.UBO_Email,
+                            content["UBO Email"],
+                            content.Email,
+                            content.email
+                        ];
+
+                        for (var i = 0; i < candidates.length; i += 1) {
+                            var candidate = normalizeSummaryFieldValue(candidates[i]);
+                            if (candidate) {
+                                return candidate;
+                            }
+                        }
+                    }
+                } catch (error) {
+                    // Fall back to pattern matching below.
+                }
+
+                var uboMatch = responseText.match(/"UBOEmail"\s*:\s*"([^"]+)"/i);
+                if (uboMatch) {
+                    return normalizeSummaryFieldValue(uboMatch[1]);
+                }
+
+                var emailMatch = responseText.match(/"Email"\s*:\s*"([^"]+)"/i);
+                if (emailMatch) {
+                    return normalizeSummaryFieldValue(emailMatch[1]);
+                }
+
+                return "";
+            }
+
+            function updateThankYouEmailDisplay(email) {
+                var emailElement = document.getElementById("thank-you-email");
+                if (!emailElement) {
+                    return;
+                }
+
+                emailElement.textContent = email || DEFAULT_THANK_YOU_EMAIL;
+            }
+
+            function clearThankYouEmailPoll() {
+                if (thankYouEmailPollInterval) {
+                    clearInterval(thankYouEmailPollInterval);
+                    thankYouEmailPollInterval = null;
+                }
+            }
+
+            function populateThankYouEmail() {
+                clearThankYouEmailPoll();
+
+                var email = cachedThankYouEmail || getUboEmailFromEmbed(activeEmbed);
+
+                if (!email && lastSubmitResponseText) {
+                    email = getUboEmailFromResponseText(lastSubmitResponseText);
+                }
+
+                updateThankYouEmailDisplay(email);
+
+                if (email || !activeEmbed) {
+                    return;
+                }
+
+                var attempts = 0;
+                thankYouEmailPollInterval = setInterval(function () {
+                    attempts += 1;
+                    cacheThankYouEmailFromEmbed(activeEmbed);
+                    var resolvedEmail = cachedThankYouEmail || getUboEmailFromEmbed(activeEmbed);
+
+                    if (resolvedEmail) {
+                        updateThankYouEmailDisplay(resolvedEmail);
+                        clearThankYouEmailPoll();
+                        log("info", "Thank you email populated from summary field.", resolvedEmail);
+                        return;
+                    }
+
+                    if (attempts >= 30) {
+                        clearThankYouEmailPoll();
+                        log("info", "Email/UBO Email not found; using default placeholder.");
+                    }
+                }, 200);
+            }
+
+            function setupThankYouModal() {
+                var closeButton = document.getElementById("thank-you-close-btn");
+                if (!closeButton || closeButton.__kycCloseBound) {
+                    return;
+                }
+
+                closeButton.__kycCloseBound = true;
+                closeButton.addEventListener("click", redirectToAmicorpHome);
+            }
+
+            function showThankYouModal() {
+                var modal = document.getElementById("thank-you-modal");
+                var homepage = document.getElementById("default-homepage");
+
+                if (homepage) {
+                    homepage.classList.remove("visible");
+                    homepage.setAttribute("aria-hidden", "true");
+                }
+                if (modal) {
+                    modal.classList.add("visible");
+                    modal.setAttribute("aria-hidden", "false");
+                }
+
+                populateThankYouEmail();
+                document.title = THANK_YOU_TITLE;
+                log("info", "Showing thank you modal after successful submit.");
+            }
+
+            function isSubmitFlowActive() {
+                if (!submitClickedAt) {
+                    return false;
+                }
+
+                if (lastNonSubmitActionAt > submitClickedAt) {
+                    return false;
+                }
+
+                return Date.now() - submitClickedAt < SUBMIT_TRACKING_WINDOW_MS;
+            }
+
+            function canShowThankYouAfterSubmit() {
+                if (submitSuccessHandled || assignmentNotFoundHandled || !submitClickedAt) {
+                    return false;
+                }
+
+                return lastNonSubmitActionAt <= submitClickedAt;
+            }
+
+            function markSubmitClicked(embed) {
+                submitClickedAt = Date.now();
+                submitPending = true;
+                activeEmbed = embed;
+                cacheThankYouEmailFromEmbed(embed);
+
+                if (lastResolvedResponseAt && Date.now() - lastResolvedResponseAt < 8000 && lastSubmitResponseText) {
+                    log("info", "Using resolved response received around submit time.");
+                    handleSubmitSuccess("network-staged");
+                }
+            }
+
+            function markNonSubmitAction() {
+                lastNonSubmitActionAt = Date.now();
+                submitPending = false;
+                submitClickedAt = 0;
+                clearSubmitDomCheck();
+                clearSubmitSuccessWatcher();
+            }
+
+            function clearSubmitSuccessWatcher() {
+                if (submitSuccessWatcherInterval) {
+                    clearInterval(submitSuccessWatcherInterval);
+                    submitSuccessWatcherInterval = null;
+                }
+            }
+
+            function tryCompleteSubmitSuccess(source) {
+                if (!canShowThankYouAfterSubmit()) {
+                    return false;
+                }
+
+                handleSubmitSuccess(source);
+                return true;
+            }
+
+            function startSubmitSuccessWatcher(embed) {
+                clearSubmitSuccessWatcher();
+                var ticks = 0;
+
+                submitSuccessWatcherInterval = setInterval(function () {
+                    ticks += 1;
+
+                    if (submitSuccessHandled || assignmentNotFoundHandled) {
+                        clearSubmitSuccessWatcher();
+                        return;
+                    }
+
+                    if (!canShowThankYouAfterSubmit()) {
+                        if (ticks > 5) {
+                            clearSubmitSuccessWatcher();
+                        }
+                        return;
+                    }
+
+                    cacheThankYouEmailFromEmbed(embed);
+
+                    if (lastResolvedResponseAt >= submitClickedAt && lastSubmitResponseText) {
+                        tryCompleteSubmitSuccess("poll-network");
+                        return;
+                    }
+
+                    if (isCaseResolvedInDom(embed)) {
+                        tryCompleteSubmitSuccess("poll-dom");
+                        return;
+                    }
+
+                    if (!hasPegaValidationErrors(embed) && !isAssignmentFormVisible(embed)) {
+                        tryCompleteSubmitSuccess("poll-form-hidden");
+                        return;
+                    }
+
+                    if (ticks >= 200) {
+                        clearSubmitSuccessWatcher();
+                        log("info", "Submit success watcher stopped after timeout.");
+                    }
+                }, 300);
+            }
+
+            function handleSubmitSuccess(source) {
+                if (!canShowThankYouAfterSubmit()) {
+                    return;
+                }
+
+                submitSuccessHandled = true;
+                submitPending = false;
+                submitClickedAt = 0;
+                clearSubmitDomCheck();
+                clearSubmitSuccessWatcher();
+                log("info", "Assignment submit success detected.", source || "unknown");
+                disconnectPegaErrorObservers();
+                showThankYouModal();
+            }
+
+            function recordResolvedResponse(body, url) {
+                if (!body || !isResolvedAssignmentResponse(body)) {
+                    return;
+                }
+
+                lastSubmitResponseText = body;
+                lastResolvedResponseAt = Date.now();
+                log("info", "Resolved assignment response captured.", url);
+
+                if (canShowThankYouAfterSubmit()) {
+                    handleSubmitSuccess("network");
+                }
+            }
+
+            function clearSubmitDomCheck() {
+                if (submitDomCheckTimeout) {
+                    clearTimeout(submitDomCheckTimeout);
+                    submitDomCheckTimeout = null;
+                }
+            }
+
+            function scheduleSubmitDomCheck(embed) {
+                clearSubmitDomCheck();
+                var delays = [800, 2000, 4000, 8000, 15000];
+
+                delays.forEach(function (delay) {
+                    setTimeout(function () {
+                        if (!canShowThankYouAfterSubmit() || submitSuccessHandled) {
+                            return;
+                        }
+
+                        cacheThankYouEmailFromEmbed(embed);
+
+                        if (lastResolvedResponseAt >= submitClickedAt && lastSubmitResponseText) {
+                            tryCompleteSubmitSuccess("delayed-network");
+                            return;
+                        }
+
+                        if (isCaseResolvedInDom(embed)) {
+                            tryCompleteSubmitSuccess("delayed-dom");
+                            return;
+                        }
+
+                        if (!hasPegaValidationErrors(embed) && !isAssignmentFormVisible(embed)) {
+                            tryCompleteSubmitSuccess("delayed-form-hidden");
+                        }
+                    }, delay);
+                });
+            }
+
+            function evaluateSubmitNetworkResponse(response, url, method) {
+                if (submitSuccessHandled || assignmentNotFoundHandled) {
+                    return;
+                }
+
+                if (!isAssignmentActionRequest(url)) {
+                    return;
+                }
+
+                var requestMethod = (method || "").toUpperCase();
+                var status = response && typeof response.status === "number" ? response.status : 0;
+
+                if (status >= 200 && status < 300) {
+                    readNetworkResponseText(response).then(function (body) {
+                        if (submitSuccessHandled || assignmentNotFoundHandled) {
+                            return;
+                        }
+
+                        if (isResolvedAssignmentResponse(body)) {
+                            recordResolvedResponse(body, url);
+                            return;
+                        }
+
+                        if (canShowThankYouAfterSubmit() && requestMethod === "PATCH") {
+                            log("info", "Assignment PATCH completed without resolution status.", url);
+                        }
+                    });
+                    return;
+                }
+
+                if (canShowThankYouAfterSubmit() && status >= 400) {
+                    log("info", "Submit API returned an error status.", status);
+                }
+            }
+
+            function handleAssignmentActionClick(actionButton, embed) {
+                if (!isInteractiveActionButton(actionButton)) {
+                    return;
+                }
+
+                if (isSubmitActionButton(actionButton)) {
+                    if (submitSuccessHandled || assignmentNotFoundHandled) {
+                        return;
+                    }
+
+                    markSubmitClicked(embed);
+                    log("info", "Submit button clicked; monitoring for successful completion.");
+                    startSubmitSuccessWatcher(embed);
+                    scheduleSubmitDomCheck(embed);
+                    return;
+                }
+
+                if (isNonSubmitActionButton(actionButton)) {
+                    onNonSubmitActionClicked(actionButton.getAttribute("data-testid") || actionButton.getAttribute("name"));
+                }
+            }
+
+            function onNonSubmitActionClicked(actionTestId) {
+                markNonSubmitAction();
+                log("info", "Non-submit assignment action clicked; thank you popup suppressed.", actionTestId || "unknown");
+            }
+
+            function bindDirectSubmitButtonListeners(embed) {
+                if (!embed || !embed.shadowRoot) {
+                    return;
+                }
+
+                var buttons = embed.shadowRoot.querySelectorAll('[data-testid=":assignment-action-buttons:submit"]');
+                for (var i = 0; i < buttons.length; i += 1) {
+                    var button = buttons[i];
+                    if (!isInteractiveActionButton(button) || button.__kycDirectSubmitBound) {
+                        continue;
+                    }
+
+                    button.__kycDirectSubmitBound = true;
+                    ["pointerdown", "click"].forEach(function (eventName) {
+                        button.addEventListener(eventName, function () {
+                            handleAssignmentActionClick(button, embed);
+                        }, true);
+                    });
+                }
+            }
+
+            function installGlobalSubmitClickCapture() {
+                if (window.__kycGlobalSubmitCaptureInstalled) {
+                    return;
+                }
+
+                window.__kycGlobalSubmitCaptureInstalled = true;
+
+                document.addEventListener("click", function (event) {
+                    var embed = document.getElementById("theEmbed") || document.querySelector("pega-embed");
+                    if (!embed || !embed.shadowRoot) {
+                        return;
+                    }
+
+                    var path = typeof event.composedPath === "function" ? event.composedPath() : [];
+                    if (path.indexOf(embed) === -1 && !embed.contains(event.target)) {
+                        return;
+                    }
+
+                    var actionButton = resolveActionButtonFromEvent(event.target, embed);
+                    if (actionButton) {
+                        handleAssignmentActionClick(actionButton, embed);
+                    }
+                }, true);
+
+                document.addEventListener("pointerdown", function (event) {
+                    var embed = document.getElementById("theEmbed") || document.querySelector("pega-embed");
+                    if (!embed || !embed.shadowRoot) {
+                        return;
+                    }
+
+                    var actionButton = resolveActionButtonFromEvent(event.target, embed);
+                    if (actionButton && isSubmitActionButton(actionButton)) {
+                        handleAssignmentActionClick(actionButton, embed);
+                    }
+                }, true);
+            }
+
+            function attachSubmitButtonListener(embed) {
+                if (!embed || !embed.shadowRoot) {
+                    return;
+                }
+
+                bindDirectSubmitButtonListeners(embed);
+
+                if (embed.__kycShadowClickBound) {
+                    return;
+                }
+
+                if (!embed.shadowRoot.querySelector(ASSIGNMENT_ACTION_BUTTON_SELECTOR) &&
+                    !embed.shadowRoot.querySelector('button[name="submit"]')) {
+                    return;
+                }
+
+                embed.__kycShadowClickBound = true;
+                embed.shadowRoot.addEventListener("click", function (event) {
+                    var actionButton = resolveActionButtonFromEvent(event.target, embed);
+                    if (actionButton) {
+                        handleAssignmentActionClick(actionButton, embed);
+                    }
+                }, true);
+                log("info", "Assignment action button listener attached.");
+            }
+
+            function checkSubmitState(root, embed) {
+                if (!canShowThankYouAfterSubmit() || submitSuccessHandled || assignmentNotFoundHandled || !embed) {
+                    return;
+                }
+
+                cacheThankYouEmailFromEmbed(embed);
+
+                if (lastResolvedResponseAt >= submitClickedAt && lastSubmitResponseText) {
+                    tryCompleteSubmitSuccess("mutation-network");
+                    return;
+                }
+
+                if (isCaseResolvedInDom(embed)) {
+                    tryCompleteSubmitSuccess("mutation-dom");
+                    return;
+                }
+
+                if (!isAssignmentFormVisible(embed) && !hasPegaValidationErrors(embed)) {
+                    tryCompleteSubmitSuccess("mutation-form-hidden");
+                }
+            }
+
+            function hideErrorBanner() {
+                var banner = document.getElementById("error-banner");
+                if (banner) {
+                    banner.classList.remove("visible");
+                    banner.textContent = "";
+                }
+            }
+
+            function isAssignmentNotFoundMessage(text) {
+                return typeof text === "string" && ASSIGNMENT_NOT_FOUND_PATTERN.test(text);
+            }
+
+            function nodeContainsAssignmentNotFound(node) {
+                if (!node) {
+                    return false;
+                }
+
+                if (node.nodeType === Node.TEXT_NODE) {
+                    return isAssignmentNotFoundMessage(node.textContent);
+                }
+
+                if (node.nodeType === Node.ELEMENT_NODE && node.shadowRoot) {
+                    if (nodeContainsAssignmentNotFound(node.shadowRoot)) {
+                        return true;
+                    }
+                }
+
+                var child = node.firstChild;
+                while (child) {
+                    if (nodeContainsAssignmentNotFound(child)) {
+                        return true;
+                    }
+                    child = child.nextSibling;
+                }
+
+                return false;
+            }
+
+            function disconnectPegaErrorObservers() {
+                pegaErrorObservers.forEach(function (observer) {
+                    observer.disconnect();
+                });
+                pegaErrorObservers = [];
+                clearSubmitDomCheck();
+                clearSubmitSuccessWatcher();
+
+                if (shadowPollInterval) {
+                    clearInterval(shadowPollInterval);
+                    shadowPollInterval = null;
+                }
+            }
+
+            function checkPegaEmbedForAssignmentNotFound(embed) {
+                if (!embed) {
+                    return false;
+                }
+
+                if (embed.shadowRoot) {
+                    var bannerMessage = embed.shadowRoot.querySelector('[data-testid=":banner:message-label"]');
+                    if (bannerMessage && isAssignmentNotFoundMessage(bannerMessage.textContent)) {
+                        return true;
+                    }
+
+                    if (nodeContainsAssignmentNotFound(embed.shadowRoot)) {
+                        return true;
+                    }
+                }
+
+                return nodeContainsAssignmentNotFound(embed);
+            }
+
+            function handleAssignmentNotFound(source) {
+                if (assignmentNotFoundHandled) {
+                    return;
+                }
+
+                assignmentNotFoundHandled = true;
+                log("info", "Pega assignment not found detected.", source || "unknown");
+                hideErrorBanner();
+                showDefaultHomepage();
+                disconnectPegaErrorObservers();
+            }
+
+            function checkEmbedForAssignmentNotFound(root, embed) {
+                if (assignmentNotFoundHandled) {
+                    return;
+                }
+
+                if (checkPegaEmbedForAssignmentNotFound(embed) || nodeContainsAssignmentNotFound(root)) {
+                    handleAssignmentNotFound("dom");
+                }
+            }
+
+            function observeNodeForAssignmentNotFound(node, embed) {
+                if (!node) {
+                    return;
+                }
+
+                var observer = new MutationObserver(function () {
+                    checkEmbedForAssignmentNotFound(node, embed);
+                    checkSubmitState(node, embed);
+                });
+
+                observer.observe(node, {
+                    childList: true,
+                    subtree: true,
+                    characterData: true
+                });
+
+                pegaErrorObservers.push(observer);
+            }
+
+            function startPegaErrorObserver(embedContainer, embed) {
+                disconnectPegaErrorObservers();
+                activeEmbed = embed;
+                var shadowObserverAttached = false;
+
+                checkEmbedForAssignmentNotFound(embedContainer, embed);
+                observeNodeForAssignmentNotFound(embedContainer, embed);
+
+                function attachShadowObserver() {
+                    if (assignmentNotFoundHandled || !embed.shadowRoot || shadowObserverAttached) {
+                        attachSubmitButtonListener(embed);
+                        return;
+                    }
+
+                    shadowObserverAttached = true;
+                    observeNodeForAssignmentNotFound(embed.shadowRoot, embed);
+                    checkEmbedForAssignmentNotFound(embed.shadowRoot, embed);
+                    attachSubmitButtonListener(embed);
+                }
+
+                attachShadowObserver();
+
+                var attempts = 0;
+                shadowPollInterval = setInterval(function () {
+                    attempts += 1;
+                    attachShadowObserver();
+                    checkEmbedForAssignmentNotFound(embedContainer, embed);
+                    attachSubmitButtonListener(embed);
+                    cacheThankYouEmailFromEmbed(embed);
+
+                    if ((assignmentNotFoundHandled || submitSuccessHandled || attempts >= 150) && shadowPollInterval) {
+                        clearInterval(shadowPollInterval);
+                        shadowPollInterval = null;
+                    }
+                }, 200);
+            }
+
+            function patchNetworkMonitor(method, originalFn) {
+                return function () {
+                    var args = Array.prototype.slice.call(arguments);
+                    var requestUrl = typeof args[0] === "string" ? args[0] : (args[0] && args[0].url) || "";
+                    var requestMethod = method === "fetch"
+                        ? ((args[1] && args[1].method) || "GET")
+                        : "";
+
+                    var result = originalFn.apply(this, args);
+
+                    if (result && typeof result.then === "function") {
+                        return result.then(function (response) {
+                            if (!assignmentNotFoundHandled && response && response.status === 404) {
+                                response.clone().text().then(function (body) {
+                                    if (isAssignmentNotFoundMessage(body)) {
+                                        handleAssignmentNotFound("network");
+                                    }
+                                }).catch(function () {});
+                            }
+
+                            evaluateSubmitNetworkResponse(response, requestUrl, requestMethod);
+                            return response;
+                        });
+                    }
+
+                    if (result && typeof result.addEventListener === "function") {
+                        result.addEventListener("load", function () {
+                            evaluateSubmitNetworkResponse(
+                                result,
+                                requestUrl,
+                                result.__kycRequestMethod || ""
+                            );
+                        });
+                    }
+
+                    return result;
+                };
+            }
+
+            function installNetworkErrorMonitor() {
+                if (window.__kycBridgeNetworkMonitorInstalled) {
+                    return;
+                }
+
+                window.__kycBridgeNetworkMonitorInstalled = true;
+
+                if (typeof window.fetch === "function") {
+                    window.fetch = patchNetworkMonitor("fetch", window.fetch);
+                }
+
+                if (typeof XMLHttpRequest !== "undefined") {
+                    var originalOpen = XMLHttpRequest.prototype.open;
+                    var originalSend = XMLHttpRequest.prototype.send;
+
+                    XMLHttpRequest.prototype.open = function (method, url) {
+                        this.__kycRequestUrl = url;
+                        this.__kycRequestMethod = (method || "GET").toUpperCase();
+                        return originalOpen.apply(this, arguments);
+                    };
+
+                    XMLHttpRequest.prototype.send = function () {
+                        var xhr = this;
+
+                        function onXhrDone() {
+                            if (xhr.readyState !== 4) {
+                                return;
+                            }
+
+                            evaluateSubmitNetworkResponse(
+                                xhr,
+                                xhr.__kycRequestUrl || "",
+                                xhr.__kycRequestMethod || ""
+                            );
+                        }
+
+                        xhr.addEventListener("readystatechange", onXhrDone);
+                        xhr.addEventListener("load", onXhrDone);
+                        return originalSend.apply(this, arguments);
+                    };
+                }
+            }
+
             function showError(message) {
                 var banner = document.getElementById("error-banner");
                 if (!banner) {
@@ -321,24 +1162,48 @@
                 banner.classList.add("visible");
             }
 
+            function decodeBase64AssignmentId(encoded) {
+                var normalized = encoded.replace(/-/g, "+").replace(/_/g, "/");
+                var padding = normalized.length % 4;
+
+                if (padding) {
+                    normalized += "====".slice(padding);
+                }
+
+                return atob(normalized);
+            }
+
             function getAssignmentIdFromUrl() {
                 try {
                     var params = new URLSearchParams(window.location.search);
-                    var id = params.get("id");
+                    var encodedId = params.get("id");
 
-                    if (id === null) {
+                    if (encodedId === null) {
                         log("info", "No 'id' query parameter in URL.");
                         return null;
                     }
 
-                    id = id.trim();
-                    if (!id) {
+                    encodedId = encodedId.trim();
+                    if (!encodedId) {
                         log("warn", "'id' query parameter is present but empty.");
                         return null;
                     }
 
-                    log("info", "Assignment ID from URL:", id);
-                    return id;
+                    var assignmentId;
+                    try {
+                        assignmentId = decodeBase64AssignmentId(encodedId).trim();
+                    } catch (decodeErr) {
+                        log("error", "Failed to decode base64 assignment ID.", decodeErr);
+                        return null;
+                    }
+
+                    if (!assignmentId) {
+                        log("warn", "Decoded assignment ID is empty.");
+                        return null;
+                    }
+
+                    log("info", "Assignment ID decoded from base64:", assignmentId);
+                    return assignmentId;
                 } catch (err) {
                     log("error", "Failed to parse URL query parameters.", err);
                     throw err;
@@ -376,7 +1241,7 @@
 
                 embed.addEventListener("error", function (event) {
                     log("error", "pega-embed reported an error.", event);
-                    showError("The assignment could not be loaded. Please check the link or try again later.");
+                    handleAssignmentNotFound("embed-error");
                 });
 
                 return embed;
@@ -405,6 +1270,7 @@
 
                 var embed = createPegaEmbed(assignmentId);
                 embedContainer.appendChild(embed);
+                startPegaErrorObserver(embedContainer, embed);
                 log("info", "pega-embed element created and appended.", {
                     assignmentID: assignmentId,
                     id: embed.id
@@ -413,6 +1279,9 @@
 
             function init() {
                 log("info", "DOM loaded; initializing mashup.");
+                installNetworkErrorMonitor();
+                installGlobalSubmitClickCapture();
+                setupThankYouModal();
 
                 try {
                     var assignmentId = getAssignmentIdFromUrl();
@@ -429,6 +1298,9 @@
                     showDefaultHomepage();
                 }
             }
+
+            installNetworkErrorMonitor();
+            installGlobalSubmitClickCapture();
 
             if (document.readyState === "loading") {
                 document.addEventListener("DOMContentLoaded", init);
